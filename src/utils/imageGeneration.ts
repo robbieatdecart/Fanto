@@ -45,7 +45,6 @@ async function removeBackground(imageUrl: string): Promise<string> {
 
 export async function generateImage(prompt: string): Promise<string | null> {
   try {
-    console.log('Generating image with prompt:', prompt);
     
     // Ensure consistent style and background
     const enhancedPrompt = `${prompt}. High-quality 3D rendered character in the exact style of Disney's Zootopia - modern, expressive, and detailed 3D animation with careful attention to fur texture and facial expressions. The character should be highly expressive with clear emotions, maintaining the high production quality of a Disney/Pixar animated film. Pure white background only - no environmental elements.`;
