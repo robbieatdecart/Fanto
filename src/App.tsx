@@ -102,7 +102,7 @@ function DraggableBlock({
   );
 }
 
-function Stage({ onDrop, children }: { onDrop: (text: string) => void, children: React.ReactNode }) {
+function Stage({ children }: { children: React.ReactNode }) {
   const { setNodeRef } = useDroppable({ id: 'stage' });
 
   return (
@@ -1040,7 +1040,7 @@ Actions: ${modifications.join(' and ')}`
           </div>
 
             <div className="flex-1 -mt-[128px]">
-              <Stage onDrop={handlePromptClick}>
+              <Stage>
                 <div className="relative w-full aspect-square mb-4">
                   {/* Stage background */}
                   <div 
